@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Link OAnalyze
+OAnalyze is a professional cryptanalysis suite for breaking and studying classical ciphers and inspecting unknown data. It provides frequency analysis, Index of Coincidence, Kasiski testing, Vigenère and substitution solvers, Caesar/ROT analysis and rail-fence/Atbash/Affine modules, alongside hash identification and cracking. Entropy and encoding detectors help triage unknown blobs, and an auto-analyze pipeline chains the modules for a first pass.
 
 ---
 
 ## ✨ Features
 
-- Cryptanalysis and cipher breaking tool
+- Frequency analysis, Index of Coincidence and Kasiski key-length detection
+- Automatic Vigenère and hill-climb substitution cipher breakers
+- Caesar / ROT-N analysis and rail-fence, Atbash and Affine modules
+- Signature-based hash identification plus dictionary and brute-force cracking
+- Shannon entropy and Base64/32/16/URL/hex encoding detection
+- Auto-analyze pipeline and non-interactive file analysis mode
 
 ---
 
@@ -38,7 +43,9 @@ Link OAnalyze
 ## 🚀 Usage
 
 ```bash
+./OAnalyze cipher.txt
 ./OAnalyze
+./OAnalyze --help
 ```
 
 ---
